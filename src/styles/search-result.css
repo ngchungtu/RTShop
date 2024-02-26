@@ -1,0 +1,31 @@
+.search-result {
+  padding: 10px 20px;
+}
+
+.search-result:hover {
+  background-color: #efefef;
+}
+
+.sr-product-img {
+  width: 50px;
+  height: 100%;
+}
+
+.sr-item {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  align-items: center;
+}
+
+.sr-product-name {
+  margin: 0 15px;
+}
+
+.search-result>a {
+  text-decoration: auto;
+  color: black;
+}
+.search-result>a:hover{
+  font-weight: 600;
+}
