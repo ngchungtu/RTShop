@@ -4,7 +4,7 @@ import * as _API from "./API_Url";
 export const getApiProduct = async () => {
     return new Promise((resolve, reject) => {
         try {
-            const data = axios.get(_API.BASE_API_URL)
+            const data = axios.get(_API.BASE_API_URL || "https://nct-api.vercel.app/product")
                 .then((response) => {
                     if (response) {
                         resolve(response)
@@ -25,7 +25,7 @@ export const getApiProduct = async () => {
 export const getProductById = async (productId) => {
     return new Promise((resolve, reject) => {
         try {
-            const data = axios.get(_API.BASE_API_URL)
+            const data = axios.get(_API.BASE_API_URL || "https://nct-api.vercel.app/product")
                 .then((response) => {
                     if (response) {
                         const productItem = response.data.filter((item) => item.id === Number(productId))
